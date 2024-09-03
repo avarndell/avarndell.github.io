@@ -6,7 +6,6 @@ PATH
       jekyll-admin (~> 0.11.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-      sinatra (>= 3, < 4)
 
 GEM
   remote: https://rubygems.org/
@@ -117,6 +116,7 @@ DEPENDENCIES
   bundler
   http_parser.rb (~> 0.6.0)
   minima!
+  sinatra (>= 3, < 4)
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.2.0)
