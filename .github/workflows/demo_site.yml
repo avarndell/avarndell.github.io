@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies
         run: bundle install && bundle exec appraisal install
       - name: Build site
-        run: bundle exec jekyll build --verbose --trace
+        run: bundle exec jekyll build --verbose --trace --future
       - name: Deploy to GitHub Pages
         run: |
           SOURCE_COMMIT="$(git log -1 --pretty="%an: %B")"
