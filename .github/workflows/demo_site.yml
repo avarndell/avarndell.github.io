@@ -7,6 +7,8 @@ on:
 jobs:
   deploy_site:
     runs-on: "ubuntu-latest"
+    permissions:
+      contents: write
     env:
       BUNDLE_PATH: "vendor/bundle"
       BUNDLE_JOBS: 4
