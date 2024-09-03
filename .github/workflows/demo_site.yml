@@ -34,14 +34,14 @@ jobs:
         run: bundle exec jekyll build --verbose --trace
       - name: Deploy to GitHub Pages
         run: |
-          SOURCE_COMMIT="$(git log -1 --pretty="%an: %B" "$GITHUB_SHA")"
+          SOURCE_COMMIT="$(git log -1 --pretty="%an: %B")"
           pushd _site &>/dev/null
           : > .nojekyll
 
           git add --all
           git -c user.name="${GITHUB_ACTOR}" -c user.email="${GITHUB_ACTOR}@users.noreply.github.com" \
             commit --quiet \
-            --message "Deploy demo-site from ${GITHUB_SHA}" \
+            --message "Deploy demo-site from " \
             --message "$SOURCE_COMMIT"
           git push
 
