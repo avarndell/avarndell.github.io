@@ -3,16 +3,16 @@
 :root {
   /* config file CSS variables */
   --page-col: #FFFFFF;
-  --text-col: #404040;
+  --text-col: #434343;
   --link-col: #008AFF;
-  --hover-col: #0085A1;
-  --navbar-col: #EAEAEA;
-  --navbar-text-col: #404040;
-  --navbar-border-col: #DDDDDD;
-  --footer-col: #EAEAEA;
-  --footer-text-col: #777777;
+  --hover-col: #ffb18b;
+  --navbar-col: #f3f1ec;
+  --navbar-text-col: #83816a;
+  --navbar-border-col: #CCCCCC;
+  --footer-col: #f3f1ec;
+  --footer-text-col: #83816a;
   --footer-link-col: #404040;
-  --footer-hover-col: #0085A1;
+  --footer-hover-col: #ffb18b;
 
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
