@@ -1,8 +1,9 @@
 ---
 title: Menu
+image: assets/img/Shrimp.jpg
 ---
 
-<p><img src="{{ 'assets/img/shrimp.jpg' | relative_url }}" alt="Not found" style="width:500px;height:300px" class="center"/></p>
+<p><img src="{{ 'assets/img/Shrimp.jpg' | relative_url }}" alt="Not found" style="width:500px;height:300px" class="center"/></p>
 
 # Canapes
 
