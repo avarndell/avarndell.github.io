@@ -113,7 +113,6 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
-  x86_64-linux
 
 DEPENDENCIES
   appraisal (~> 2.5)
@@ -127,4 +126,4 @@ DEPENDENCIES
   wdm (~> 0.2.0)
 
 BUNDLED WITH
-   2.5.18
+   2.5.20
