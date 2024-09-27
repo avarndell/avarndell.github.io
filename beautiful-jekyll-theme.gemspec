@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     "documentation_uri" => "https://github.com/daattali/beautiful-jekyll#readme"
   }
 
-  spec.add_runtime_dependency "jekyll", ">= 3.9.3"
+  spec.add_runtime_dependency "jekyll", ">= 4.3.4"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-admin", "~> 0.11.0"
@@ -27,6 +27,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", ">= 1.16"
   spec.add_development_dependency "sinatra", ">= 3", "< 4"
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "appraisal", "~> 2.5"
+  spec.add_dependency 'base64'
+  spec.add_dependency 'bigdecimal'
 end
