@@ -5,8 +5,10 @@ PATH
       base64
       bigdecimal
       jekyll (>= 4.3.4)
-      jekyll-admin (~> 0.11.0)
+      jekyll-admin (~> 0.11.1)
+      jekyll-feed (~> 0.17.0)
       jekyll-paginate (~> 1.1)
+      jekyll-seo-tag (~> 2.8.0)
       jekyll-sitemap (~> 1.4)
       kramdown (~> 2.3)
       kramdown-parser-gfm (~> 1.1)
@@ -30,12 +32,8 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.0-x64-mingw-ucrt)
-    ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (4.28.2-x64-mingw-ucrt)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.28.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -61,9 +59,13 @@ GEM
       jekyll (>= 3.7, < 5.0)
       sinatra (>= 1.4)
       sinatra-contrib (>= 1.4)
+    jekyll-feed (0.17.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
@@ -97,8 +99,6 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.79.3-x64-mingw-ucrt)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86_64-linux-gnu)
-      google-protobuf (~> 4.27)
     sinatra (3.2.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
@@ -124,7 +124,6 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
-  x86_64-linux
 
 DEPENDENCIES
   appraisal (~> 2.5)
