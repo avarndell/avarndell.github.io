@@ -3,7 +3,6 @@ layout: page
 ---
 
 {{ content }} {% assign posts = paginator.posts | default: site.posts %}
-
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
@@ -25,11 +24,9 @@ layout: page
       <a href="{{ post.url | absolute_url }}">
         <h2 class="post-title">{{ post.title | strip_html }}</h2>
 
-        <!-- {% if post.subtitle %} -->
-        <h3 class="post-subtitle">{{ post.body | truncate: 20 }}
-          <!-- {{ post.subtitle | strip_html }} -->
-        </h3>
-        <!-- {% endif %} -->
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
+        {% endif %}
       </a>
 
       {% if post.author %}
