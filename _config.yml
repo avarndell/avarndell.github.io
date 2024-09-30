@@ -258,23 +258,43 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: post/page:num
 
 kramdown:
   input: GFM
+
+# Collections
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "My thoughts and ideas"
+    feature_text: |
+      Welcome to my blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
   - scope:
       path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: false # add comments to all blog posts
-      social-share: false # add social media sharing buttons to all blog posts
+      # comments: false # add comments to all blog posts
+      # social-share: false # add social media sharing buttons to all blog posts
   - scope:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 
 # Exclude these files from production site
 exclude:
