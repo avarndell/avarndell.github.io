@@ -2,7 +2,7 @@
 layout: post
 title: Testing Admin
 date: 2024-09-30T08:30:00.000Z
-sub title: test admin
+subtitle: test admin
 ---
 
 ![Winery](/assets/uploads/me-winery.jpg "friend")

@@ -18,7 +18,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - {
           label: "Sub Ttile",
-          name: "sub title",
+          name: "subtitle",
           widget: "string",
           tagname: "h3",
         }
