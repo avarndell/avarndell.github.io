@@ -45,24 +45,18 @@ collections: # A list of collections the CMS should be able to edit
                   default: "about",
                 }
               - { label: "Body", name: "body", widget: "markdown" }
-      - name: "config"
-        label: "Config"
-        editor:
-          preview: false
-        files:
-          - label: "Navigation"
-            name: "navigation"
-            file: "_data/navigation.yml"
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
             fields:
-              - label: "Navigation Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: Name, name: name, widget: string }
-                  - { label: Link, name: link, widget: string }
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: "YYYY-MM-DD hh:mm:ss",
-        }
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }
