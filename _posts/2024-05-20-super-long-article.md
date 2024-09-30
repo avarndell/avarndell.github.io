@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Sample blog post to learn markdown tips
-date: 2024-09-30T08:32:00.000Z
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 sub title: test
 ---
 
