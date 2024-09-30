@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Premier Catering
+#title: Premier Catering
 
 # Your name to show in the footer
 author: Annette Findley
@@ -28,14 +28,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-#avatar: "/assets/img/premier-avatar.png"
+avatar: "/assets/img/premier-logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 #round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: "/assets/img/premier-logo.png"
+#title-img: "/assets/img/premier-logo.png"
 
 #####################################
 # --- Footer social media links --- #
@@ -263,23 +263,8 @@ paginate_path: post/page:num
 kramdown:
   input: GFM
 
-# Collections
-collections:
-  posts:
-    title: Posts
-    output: true
-    description: "My thoughts and ideas"
-    feature_text: |
-      Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
-
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -291,10 +276,6 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
 
 # Exclude these files from production site
 exclude:
