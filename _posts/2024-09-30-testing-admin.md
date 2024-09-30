@@ -2,7 +2,7 @@
 layout: post
 title: Testing Admin
 date: 2024-09-30T08:30:00.000Z
-pages: post
+subtitle: This is a sub
 ---
 ![Winery](/assets/uploads/me-winery.jpg "friend")
 
